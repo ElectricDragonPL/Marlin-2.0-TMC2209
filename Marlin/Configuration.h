@@ -25,7 +25,7 @@
 
 //#define SPRO_INVERTED_E // Enable if the extruder runs the wrong way
 #define SPRO_TMC2209 // Enable for the TMC2209 driver version
-//#define SPRO_BLTOUCH // Enable if you want to use BLTOUCH
+#define SPRO_BLTOUCH // Enable if you want to use BLTOUCH
 
 /**
  * Configuration.h 
@@ -1202,7 +1202,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 0, -42, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { 0, -36, -0.3 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1650,7 +1650,7 @@
 #if EITHER(AUTO_BED_LEVELING_LINEAR, AUTO_BED_LEVELING_BILINEAR)
 
   // Set the number of grid points per dimension.
-  #define GRID_MAX_POINTS_X 3
+  #define GRID_MAX_POINTS_X 15
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Probe along the Y axis, advancing X after each column
