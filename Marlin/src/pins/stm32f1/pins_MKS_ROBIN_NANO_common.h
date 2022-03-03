@@ -226,11 +226,11 @@
 #ifndef Z_SERIAL_RX_PIN
 #define Z_SERIAL_RX_PIN PA1 //E1_DIR_PIN
 #endif
-#ifndef E0_SERIAL_TX_PIN
-#define E0_SERIAL_TX_PIN PA6 //E1_STEP_PIN
-#endif
-#ifndef E0_SERIAL_RX_PIN
-#define E0_SERIAL_RX_PIN PA1 //E1_DIR_PIN
-#endif
+//#ifndef E0_SERIAL_TX_PIN
+//#define E0_SERIAL_TX_PIN PA6 //E1_STEP_PIN
+//#endif
+//#ifndef E0_SERIAL_RX_PIN
+//#define E0_SERIAL_RX_PIN PA1 //E1_DIR_PIN
+//#endif
 
 #define TMC_BAUD_RATE 19200

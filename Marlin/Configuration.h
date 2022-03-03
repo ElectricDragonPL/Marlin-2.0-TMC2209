@@ -885,7 +885,7 @@
   //#define I_DRIVER_TYPE  A4988
   //#define J_DRIVER_TYPE  A4988
   //#define K_DRIVER_TYPE  A4988
-  #define E0_DRIVER_TYPE TMC2209
+  #define E0_DRIVER_TYPE TMC2208_STANDALONE
 #else
   //#define I_DRIVER_TYPE  A4988
   //#define J_DRIVER_TYPE  A4988
@@ -946,7 +946,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 1600, 415 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 1600, 406.86 }
 
 /**
  * Default Max Feed Rate (mm/s)
